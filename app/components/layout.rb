@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
 class Components::Layout < Components::Base
-  # include ActionView::Helpers::AssetTagHelper
-  # include Importmap::ImportmapTagsHelper
   include Phlex::Rails::Layout
 
   def initialize(title:)
@@ -20,12 +18,13 @@ class Components::Layout < Components::Base
 				csp_meta_tag
 				csrf_meta_tags
 
-				# stylesheet_link_tag "application.tailwind", data_turbo_track: "reload"
-				stylesheet_link_tag "tailwind", "inter-font", data_turbo_track: "reload"
+				stylesheet_link_tag "application.tailwind", data_turbo_track: "reload"
+				stylesheet_link_tag "tailwind", data_turbo_track: "reload"
+
 				javascript_importmap_tags
 			end
 
-			body { yield }
+			body(class: "bg-zinc-50 dark:bg-zinc-950") { yield }
 		end
   end
 end
