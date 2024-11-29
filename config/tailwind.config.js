@@ -9,7 +9,7 @@ module.exports = {
     './app/javascript/**/*.js',
     './app/views/**/*.{erb,haml,html,slim}'
   ],
-  // darkMode: ["class"],
+  darkMode: ["class"],
   theme: {
     container: {
       center: true,
