@@ -41,6 +41,6 @@ end
 
 gem 'ruby_ui', '1.0.0.beta1'
 
-gem "phlex-rails", "~> 2.0.rc1", :github => "phlex-ruby/phlex-rails"
+gem "phlex-rails", "~> 2.0.rc2", :github => "phlex-ruby/phlex-rails"
 
 gem "tailwind_merge", "~> 0.13.3"
